@@ -16,15 +16,18 @@
     --clr-dark: #303030;
     --clr-accent: #16E0BD;
 
-    --fs-h1: 3rem;
+    --fs-h1: 2.75rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+          0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
 @media (min-width: 800px) {
     :root{
-        --fs-h1: 4.5rem;
+        --fs-h1: 4rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
@@ -92,10 +95,12 @@ h3 {
 }
 .section__subtitle--intro,
 .section__subtitle--about {
+    padding: .25em 1em;
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
+
 
 nav { display: none;} 
 /* Introduction */
@@ -110,5 +115,6 @@ nav { display: none;}
 
     .section__subtitle--intro{
         align-self: start;
+        /* width: calc(100%+1.5em) */
     }
 }
