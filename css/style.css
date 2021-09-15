@@ -1,3 +1,4 @@
+/* General stuff */
 *,
 *::after,
 *::before {
@@ -44,6 +45,11 @@ img {
     max-width: 100%;
 }
 
+section{
+    padding: 5em 2em;
+}
+
+/* header specific */
 
 strong {
     font-weight: var(--fw-bold);
@@ -88,4 +94,21 @@ h3 {
 .section__subtitle--about {
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
+
+nav { display: none;} 
+/* Introduction */
+.intro {
+    position: relative;
+}
+
+@media (min-width: 600px){
+    .intro {
+        width: min-content;
+    }
+
+    .section__subtitle--intro{
+        align-self: start;
+    }
 }
