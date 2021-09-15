@@ -11,9 +11,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
+    --clr-light: #FFF;
     --clr-dark: #303030;
-    --clr-accent: #16eobd;
+    --clr-accent: #16E0BD;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -44,6 +44,11 @@ img {
     max-width: 100%;
 }
 
+
+strong {
+    font-weight: var(--fw-bold);
+}
+
 h1,
 h2,
 h3 {
@@ -61,4 +66,26 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+}
+
+.section__title {
+    margin-bottom: .25em;
+}
+
+.section__title--intro strong{
+    display: block;
+}
+
+.section__subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section__title--intro {
+    font-weight: var(--fw-reg);
+}
+.section__subtitle--intro,
+.section__subtitle--about {
+    background: var(--clr-accent);
+    font-family: var(--ff-secondary);
 }
