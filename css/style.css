@@ -101,6 +101,9 @@ h3 {
     margin-bottom: 1em;
 }
 
+.section__subtitle--intro{
+    display: inline-block;
+}
 
 nav { display: none;} 
 /* Introduction */
